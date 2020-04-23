@@ -546,10 +546,29 @@
   </ul>
 </div>
 <hr>
-Title <input type="text" [(ngModel)]="selectedMovie.title"/><br>
-Desc <input type="text" [(ngModel)]="selectedMovie.desc"/><br>
-Year <input type="text" [(ngModel)]="selectedMovie.year"/><br>
-<button (click)="updateMovie()"> PUT </button>
-<button (click)="createMovie()"> POST </button>
-<button (click)="deleteMovie()"> DELETE </button>
+<!--<alert type="success">Success</alert>-->
 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<div class = 'container'>
+
+  <div class = 'jumbtron'>
+    <label>Title</label>
+    <input type="text" [(ngModel)]="selectedMovie.title" placeholder="Title"/>
+  </div>
+
+  <div class ='well'>
+    <label>Desc</label>
+    <input type="text" [(ngModel)]="selectedMovie.desc" placeholder="Desc"/>
+  </div>
+
+  <div class ='well'>
+    <label>Year</label>
+    <input type="text" [(ngModel)]="selectedMovie.year" placeholder="Year"/>
+  </div>
+  <!--Desc <input type="text" [(ngModel)]="selectedMovie.desc"/><br>-->
+  <!--Desc <input type="text" [(ngModel)]="selectedMovie.desc"/><br>-->
+  <!--Year <input type="text" [(ngModel)]="selectedMovie.year"/><br>-->
+  <button  class="btn btn-success" (click)="updateMovie()"> PUT </button>
+  <button class="btn btn-primary" (click)="createMovie()"> POST </button>
+  <button class="btn btn-danger" (click)="deleteMovie()"> DELETE </button>
+</div>
